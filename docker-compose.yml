@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web-app:
+    build:
+      context: .
+      args:
+        http_proxy: http://www-proxy.us.oracle.com:80
+    image: my_nginx
+    ports:
+      - 8080:80
