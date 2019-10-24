@@ -1,6 +1,6 @@
 FROM nginx
 
-RUN apt-get update && apt-get install -y curl vim
+RUN apt-get update && apt-get install -y curl vim procps
 WORKDIR /var/www/html
 COPY ./index.html ./index.html
 
